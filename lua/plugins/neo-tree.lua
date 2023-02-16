@@ -3,13 +3,13 @@ return {
   cmd = "Neotree",
   branch = "v2.x",
   keys = {
-    { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Neotree" },
+    { "<leader>ft", "<cmd>Neotree toggle<cr>", desc = "Neotree" },
   },
   dependencies = {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
   },
-  config = {
+  opts = {
     filesystem = {
       follow_current_file = true,
       hijack_netrw_behavior = "open_current",
